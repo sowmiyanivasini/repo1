@@ -2,13 +2,13 @@ pipeline{
       agent any
       triggers {
       pollSCM '* * * * *'
-  }
+   }
       stages{
            stage('stage'){
               steps {
                sh '''
                echo "from stage1"
-               bash ${WORKSPACE}/linux/script.sh'''
+               bash ${WORKSPACE}/linux/script.sh ${MYVAR}'''
              }
             }
           }
