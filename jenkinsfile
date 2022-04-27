@@ -8,7 +8,7 @@ pipeline{
               steps {
               sh '''
               echo "From stage1"
-              bash ${WORKSPACE}/linux/script.sh'''
+              bash ${WORKSPACE}/123.sh'''
                }
              }
             }

@@ -1,2 +1,5 @@
 #!/bin/bash
-echo "Hello World"
+for i in $@
+do
+  echo "Hello world in loop $i"
+done
