@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in {a..d}
+for i in $@
 do
   echo "Hello world in loop $i"
 done

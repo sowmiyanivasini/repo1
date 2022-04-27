@@ -6,7 +6,9 @@ pipeline{
       stages{
           stage('first_stage'){
           steps{
-           bash' ${WORKSPACE}/linux/script.sh ${MYVAR}'
+             sh'''
+             echo "From stage1"
+           bash ${WORKSPACE}/linux/script.sh ${MYVAR}'''
              }
             }
            }
