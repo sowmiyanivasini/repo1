@@ -4,7 +4,7 @@ pipeline{
      pollSCM '* * * * *'
 }
       stages{
-          stage(first_stage){
+          stage('first_stage'){
           steps{
            bash' ${WORKSPACE}/linux/script.sh ${MYVAR}'
              }
