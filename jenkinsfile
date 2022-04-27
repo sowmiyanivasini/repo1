@@ -4,7 +4,7 @@ pipeline{
       pollSCM '* * * * *'
    }
       stages{
-           stage('first_stage'){
+           stage('stage1'){
               steps {
               sh '''
               echo "From stage1"
