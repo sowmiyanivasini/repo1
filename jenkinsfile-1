@@ -1,0 +1,13 @@
+pipeline{
+     agent any
+     triggers{
+     poll SCM '* * * * *'
+}
+      stages{
+          stage(first_stage){
+          steps{
+           bash' ${WORKSPACE}/linux/script.sh ${MYVAR}'
+             }
+            }
+           }
+          }
