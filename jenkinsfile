@@ -6,11 +6,11 @@ pipeline{
       stages{
            stage('stage'){
               steps {
-               sh '''
-               echo "from stage1"
-               bash ${WORKSPACE}/linux/script.sh
+               sh 'echo "From stage1"'
+               sh '${WORKSPACE}/linux/script.sh'
+               }
              }
             }
-          }
-        }
+           }
+ 
          
